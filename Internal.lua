@@ -1,9 +1,6 @@
-if not game:IsLoaded() then
-	game.Loaded:Wait()
-end
+repeat wait() until game:GetService("Players").LocalPlayer ~= nil
 if getgenv().InternalUILoaded ~= true then
 	getgenv().InternalUILoaded = true
-	repeat wait() until game:GetService("Players").LocalPlayer ~= nil end
 	-- Gui to Lua
 	-- Version: 3.2
 	
