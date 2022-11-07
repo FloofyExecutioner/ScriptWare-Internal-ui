@@ -1,4 +1,7 @@
 if getgenv().InternalUILoaded ~= true then
+	if not game:IsLoaded() then
+		game.Loaded:Wait()
+	end
 	getgenv().InternalUILoaded = true
 	-- Gui to Lua
 	-- Version: 3.2
